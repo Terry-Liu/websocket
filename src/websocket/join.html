@@ -1,0 +1,27 @@
+<html>
+<head>
+<body>
+<script type="text/javascript" charset="gb2312">
+
+
+function sure(){
+	console.log("sure")
+	var user =  document.getElementById('name').value;
+	if (""==user){
+		alert("用户名不能为空");
+		return
+	}
+	window.location.href="chat?username="+encodeURI(user); 
+};
+</script>
+<h3>Anonymous Talking</h3>
+<form>
+	
+	<p>
+		your name: <input id = "name" type = "text" value ="">
+	</p>
+</form>
+	<button onclick="sure();">Sure</button>
+</body>
+</head>
+</html>
